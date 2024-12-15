@@ -1,0 +1,10 @@
+[33mcommit 083bea21290ae6124f2ea51fe245e2b9c6f206de[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Lalubasha <lallalbasha111@gmail.com>
+Date:   Sun Dec 15 10:19:38 2024 +0530
+
+    first comment
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2e95243[m
+Binary files /dev/null and b/README.md differ

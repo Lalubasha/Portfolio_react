@@ -1,0 +1,57 @@
+.resume-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background:transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid #ffa500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.resume-header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.contact p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    border-left: 4px solid #ffa500;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}

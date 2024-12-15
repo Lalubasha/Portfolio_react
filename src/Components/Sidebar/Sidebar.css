@@ -1,0 +1,102 @@
+/* Common Sidebar Styling */
+.sidebar {
+    width: 300px;
+    height: 95%;
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+    background-color: transparent;
+    
+}
+
+.sidebar-content {
+    text-align: center;
+    width: 100%;
+}
+
+/* Profile Image Styling */
+.sidebar-profile {
+    
+    margin-bottom: 20px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgb(31, 154, 225);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Name and Title */
+.name {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Information */
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Light Mode Styling */
+.sidebar.light {
+    color: #333;
+  }
+
+.sidebar.light .profile {
+    border-color: #ffa500;
+}
+
+.sidebar.light .contact-info a {
+    color: #333;
+}
+
+.sidebar.light .contact-info a:hover {
+    color: #ffa500;
+}*/
+
+/* Dark Mode Styling */
+
+.sidebar.dark {
+    
+    color: #f9f9f9;
+  }
+
+.sidebar.dark .profile {
+    border-color: #44b50f;
+}
+
+.sidebar.dark .contact-info a {
+    color: #f9f9f9;
+}
+
+.sidebar.dark .contact-info a:hover {
+    color: #ffa500;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}

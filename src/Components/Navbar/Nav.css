@@ -1,0 +1,184 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  position: fixed;
+  width: 75%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+ 
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: auto auto auto 15px;
+  color: inherit;
+  transition: 0.5s ease,color 0.1s ease;
+}
+
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Content and Links */
+.navbar-content {
+  display: flex;
+  gap: 90px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: inherit;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  
+}
+
+
+
+/* Toggle Button */
+.toggle-button {
+  position: relative;
+  width: 90px;
+  height: 35px;
+
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+  margin-right: 10px;
+}
+.dark .toggle-button{
+  border: 2px solid #ccc;
+}
+.light .toggle-button{
+  border: 2px solid #333;
+}
+
+.dark .toggle-button:hover {
+  border-color: #ffa500;
+}
+
+.light .toggle-button:hover {
+  border-color: white;
+}
+/* Icon Container */
+.icon-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+.moon-icon {
+  font-size: 1.6rem;
+  position: absolute;
+  left: 5px;
+  transform: translateX(0);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 1;
+  color:white;
+  
+}
+
+
+.sun-icon {
+  font-size: 1.6rem;
+  color: #ffa500;
+  position: absolute;
+  right: 5px;
+  transform: translateX(0);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  opacity: 1;
+}
+
+/* Dark Mode */
+
+.dark {
+ 
+  color:white;
+}
+
+.dark .nav-link {
+  color: white;
+}
+.dark .navbar-logo:hover {
+  transform: scale(1.1);
+  color: #ffa500;
+}
+
+.dark .nav-link:hover {
+
+ color: #ffa500;
+ transform: scale(1.05);
+ 
+}
+.dark .navbar {
+  box-shadow: 1px 1px 10px 1px rgba(221, 188, 188, 0.962);
+}
+
+/* Light Mode */
+
+.light {
+
+  color: black;
+}
+.light .navbar-logo:hover {
+  transform: scale(1.1);
+  color:white;
+}
+
+.light .nav-link {
+  color: black;
+}
+
+.light .nav-link:hover {
+
+  color: white;
+  transform: scale(1.05);
+  
+ }
+.light .navbar {
+  box-shadow: 1px 1px 15px 3px rgba(36, 34, 34, 0.962);
+}
+
+/* Sun/Moon Transitions */
+
+.sun-active .sun-icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sun-active .moon-icon {
+  transform: translateX(80px);
+  opacity: 0;
+}
+
+.moon-active .moon-icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.moon-active .sun-icon {
+  transform: translateX(-80px);
+  opacity: 0;
+}
