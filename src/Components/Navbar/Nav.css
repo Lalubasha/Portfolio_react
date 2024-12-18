@@ -5,12 +5,13 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 8px;
-
+  
   position: fixed;
   width: 75%;
   z-index: 1000;
   transition: background-color 0.3s ease, color 0.3s ease;
- 
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 
 .navbar-logo {
@@ -64,7 +65,7 @@
   margin-right: 10px;
 }
 .dark .toggle-button{
-  border: 2px solid #ccc;
+  border: 2px solid #f1eeee;
 }
 .light .toggle-button{
   border: 2px solid #333;
@@ -134,6 +135,8 @@
 }
 .dark .navbar {
   box-shadow: 1px 1px 10px 1px rgba(221, 188, 188, 0.962);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Light Mode */
@@ -159,6 +162,8 @@
  }
 .light .navbar {
   box-shadow: 1px 1px 15px 3px rgba(36, 34, 34, 0.962);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 /* Sun/Moon Transitions */

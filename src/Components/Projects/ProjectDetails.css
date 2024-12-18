@@ -1,32 +1,37 @@
+/* Project Details Section */
 .project-details {
     font-family: Arial, sans-serif;
     max-width: 800px;
-    margin: 50px auto;
-    background: white;
+    margin: 100px auto auto auto;
+    background: transparent;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project-details h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
 .project-details p {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--secondary-color);
     line-height: 1.8;
     margin-bottom: 30px;
+    transition: color 0.3s ease;
 }
 
+/* Button Styling */
 .btn-project {
     display: inline-block;
     text-decoration: none;
-    background: #ffa500;
-    color: white;
+    background: var(--accent-color);
+    color:var(--secondary-color);
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -35,16 +40,67 @@
 }
 
 .btn-project:hover {
-    background: #e68a00;
+    background: var(--hover-accent-color);
     transform: scale(1.05);
 }
 
+/* Links */
 .project-details a {
     text-decoration: none;
-    color: #ffa500;
+    color: var(--accent-color);
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .project-details a:hover {
     text-decoration: underline;
+}
+
+/* Dark Mode Specific Styling */
+.dark .project-details {
+   
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark .project-details h1,
+.dark .project-details p {
+    color: white;
+}
+
+.dark .btn-project {
+    background: #ffa500;
+}
+
+.dark .btn-project:hover {
+    background: #e68a00;
+}
+
+.dark .project-details a {
+    color: #ffa500;
+}
+
+/* Light Mode Specific Styling */
+.light .project-details {
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light .project-details h1 {
+    color: #333;
+}
+
+.light .project-details p {
+    color: #555;
+}
+
+.light .btn-project {
+    background: #ffa500;
+}
+
+.light .btn-project:hover {
+    background: #e68a00;
+}
+
+.light .project-details a {
+    color: #ffa500;
 }

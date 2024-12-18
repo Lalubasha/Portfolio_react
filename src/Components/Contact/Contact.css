@@ -1,27 +1,32 @@
+/* Contact Container */
 .contact-container {
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 40px auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--card-background-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-container h1 {
     font-size: 2.5em;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .contact-container p {
     font-size: 1.2em;
-    color: #555;
+    color: var(--secondary-color);
     margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
+/* Contact Form */
 .contact-form {
     display: grid;
     gap: 15px;
@@ -37,29 +42,33 @@
 .form-group label {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #333;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
 }
 
 .form-group input, 
 .form-group textarea {
     padding: 10px;
     font-size: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input-border-color);
     border-radius: 5px;
     outline: none;
-    transition: border-color 0.3s;
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .form-group input:focus, 
 .form-group textarea:focus {
-    border-color: #ffa500;
+    border-color: var(--accent-color);
 }
 
+/* Submit Button */
 .submit-button {
     padding: 10px 20px;
     font-size: 1.2em;
-    background: #ffa500;
-    color: #fff;
+    background: var(--accent-color);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,9 +76,10 @@
 }
 
 .submit-button:hover {
-    background: #e68a00;
+    background: var(--hover-accent-color);
 }
 
+/* Contact Details */
 .contact-details {
     display: grid;
     gap: 15px;
@@ -77,39 +87,88 @@
 
 .contact-details h2 {
     font-size: 1.8em;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     font-size: 1.2em;
-    color: #333;
-    background: #f9f9f9;
+    color: var(--primary-color);
+    background: var(--card-background-color);
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-item span {
     font-size: 1.5em;
     margin-right: 15px;
-    color: #ffa500;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
 }
 
 .contact-item a {
-    color: #333;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #ffa500;
+    color: var(--accent-color);
 }
 
 .contact-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Styling */
+.dark .contact-container {
+   
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark .form-group input, 
+.dark .form-group textarea {
+   
+    color: white;
+    border-color: rgba(200, 200, 200, 0.2);
+}
+
+
+
+.dark .submit-button {
+    background: #ffa500;
+}
+
+.dark .submit-button:hover {
+    background: #e68a00;
+}
+
+/* Light Mode Styling */
+.light .contact-container {
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light .form-group input, 
+.light .form-group textarea {
+    background: white;
+    color: #333;
+    border-color: #ccc;
+}
+
+
+
+.light .submit-button {
+    background: #ffa500;
+}
+
+.light .submit-button:hover {
+    background: #e68a00;
 }

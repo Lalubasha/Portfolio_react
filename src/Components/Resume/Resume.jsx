@@ -8,7 +8,7 @@ function Resume() {
                 <h1>Shaik Lalu Basha</h1>
                 <p>Software Developer</p>
                 <div className="contact">
-                    <p>📞 8142038361</p>
+                  
                     <p>📧 lallalbasha111@gmail.com</p>
                     <p>
                         🌐 <a href="https://lalubasha.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a> | 

@@ -1,13 +1,16 @@
+/* Projects Section */
 .projects {
     text-align: center;
     padding: 40px 20px;
-    background: #f4f4f4;
+    background: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects .heading {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
 }
 
 .projects-container {
@@ -18,12 +21,12 @@
 }
 
 .projects-box {
-    background: white;
+    background: var(--card-background-color);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects-box:hover {
@@ -33,19 +36,22 @@
 
 .projects-info i {
     font-size: 2rem;
-    color: #ffa500;
+    color: var(--accent-color);
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .projects-info h4 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .projects-info p {
     font-size: 1rem;
-    color: #555;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
 }
 
 .buttons {
@@ -56,14 +62,64 @@
 
 .btn-project {
     text-decoration: none;
-    background: #ffa500;
+    background: var(--accent-color);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-project:hover {
+    background: var(--hover-accent-color);
+}
+
+/* Dark Mode Styling */
+
+
+.dark .projects-box {
+    
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark .projects-info i {
+    color: #ffa500;
+}
+
+.dark .projects-info h4,
+.dark .projects-info p {
+    color: white;
+}
+
+.dark .btn-project {
+    background: #ffa500;
+}
+
+.dark .btn-project:hover {
+    background: #e68a00;
+}
+
+/* Light Mode Styling */
+
+
+.light .projects-box {
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light .projects-info i {
+    color: #ffa500;
+}
+
+.light .projects-info h4,
+.light .projects-info p {
+    color: #333;
+}
+
+.light .btn-project {
+    background: #ffa500;
+}
+
+.light .btn-project:hover {
     background: #e68a00;
 }
