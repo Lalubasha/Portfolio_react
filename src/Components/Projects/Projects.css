@@ -1,27 +1,25 @@
 /* Projects Section */
 .projects {
+    margin: 20px 0px;
     text-align: center;
     padding: 40px 20px;
-    background: var(--background-color);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects .heading {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--primary-color);
     transition: color 0.3s ease;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 }
 
 .projects-box {
-    background: var(--card-background-color);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -29,28 +27,34 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.projects-box:hover {
+
+
+.dark .projects-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 15px rgba(172, 167, 167, 0.675);
+}
+.light .projects-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0px 20px rgb(14, 14, 14);
 }
 
 .projects-info i {
     font-size: 2rem;
-    color: var(--accent-color);
+   
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
 .projects-info h4 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+  
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 
 .projects-info p {
     font-size: 1rem;
-    color: var(--secondary-color);
+ 
     transition: color 0.3s ease;
 }
 
@@ -62,7 +66,7 @@
 
 .btn-project {
     text-decoration: none;
-    background: var(--accent-color);
+
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -70,16 +74,14 @@
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.btn-project:hover {
-    background: var(--hover-accent-color);
-}
+
 
 /* Dark Mode Styling */
 
 
 .dark .projects-box {
     
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.1);
 }
 
 .dark .projects-info i {
@@ -104,7 +106,7 @@
 
 .light .projects-box {
     
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.559);
 }
 
 .light .projects-info i {
@@ -113,7 +115,7 @@
 
 .light .projects-info h4,
 .light .projects-info p {
-    color: #333;
+    color: #181818;
 }
 
 .light .btn-project {

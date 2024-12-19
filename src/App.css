@@ -14,7 +14,7 @@ body.light {
   margin: 0;
   background: linear-gradient(-45deg, #4682b4, #87cefa, #f5d69a, #d1bd80, #f5bd6f);
   background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -30,16 +30,16 @@ body.light {
 
 body.dark {
   background-image: linear-gradient(-45deg, 
-        #152820, /* Very dark greenish-black for depth */
-        #1d382a, /* Dark muted green for shadows */
-        #255749, /* Deep greenish-gray for moonlit ocean reflections */
-        #203438, /* Soft grayish-green for moonlight transitions */
-        #243a30  /* Moonlit white-gray for highlights near the horizon */
+        #0f2c20, /* Very dark greenish-black for depth */
+        #1d3820, /* Dark muted green for shadows */
+        #25574f, /* Deep greenish-gray for moonlit ocean reflections */
+        #14272b, /* Soft grayish-green for moonlight transitions */
+        #0e1c16  /* Moonlit white-gray for highlights near the horizon */
     );
   background-size: 400% 400%;
-  animation: gradient 25s ease infinite;
+  animation: gradient 20s ease infinite;
   height: 100vh;
-  color: white;
+ 
  
 }
 

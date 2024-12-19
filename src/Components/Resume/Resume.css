@@ -1,44 +1,45 @@
 /* General Resume Container Styling */
 .resume-container {
     font-family: Arial, sans-serif;
-    margin: 50px auto auto auto;
+    margin: 90px auto auto auto;
     max-width: 800px;
-    padding: 20px;
+    padding: 50px;
     background: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dark .resume-container {
+    box-shadow: 0px 0px 20px 5px  rgba(240, 234, 234, 0.308);
+}
+.light .resume-container {
+    box-shadow: 0px 0px 20px 5px  rgba(10, 10, 10, 0.819);
 }
 
 /* Header Styling */
 .resume-header {
     text-align: center;
-    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
 .resume-header h1 {
     font-size: 2.5em;
-    color: var(--primary-color);
     transition: color 0.3s ease;
 }
 
 .resume-header p {
     font-size: 1.2em;
-    color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
 /* Contact Section */
 .contact p {
     margin: 5px 0;
-    color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
 .contact a {
-    color: var(--accent-color);
+    
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -50,9 +51,7 @@
 /* Section Titles */
 section h2 {
     font-size: 1.8em;
-    color: var(--primary-color);
     margin-bottom: 10px;
-    border-left: 4px solid var(--accent-color);
     padding-left: 10px;
     transition: color 0.3s ease;
 }
@@ -65,7 +64,6 @@ ul {
 
 ul li {
     margin-bottom: 5px;
-    color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
@@ -98,15 +96,15 @@ ul li {
 
 .light .resume-header h1,
 .light section h2 {
-    color: #333;
+    color: black;
 }
 
 .light .resume-header p,
 .light .contact p,
 .light ul li {
-    color: #555;
+    color: black;
 }
 
 .light .contact a {
-    color: #ffa500;
+    color: #f0eeea;
 }
