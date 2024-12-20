@@ -6,15 +6,16 @@ function Resume() {
         <div className="resume-container">
             <header className="resume-header">
                 <h1>Shaik Lalu Basha</h1>
-                <p>Software Developer</p>
+                <p> Full Stack Developer  |  Software Developer </p>
                 <div className="contact">
                   
-                    <p>📧 lallalbasha111@gmail.com</p>
+                    <p> lallalbasha111@gmail.com</p>
                     <p>
-                        🌐 <a href="https://lalubasha.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a> | 
+                        <a href="https://lalubasha.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a> | 
                         <a href="https://github.com/Lalubasha" target="_blank" rel="noopener noreferrer"> GitHub</a> | 
                         <a href="https://www.linkedin.com/in/lalu-basha-a22b281b7/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
                     </p>
+
                 </div>
             </header>
             

@@ -1,7 +1,7 @@
 /* General Resume Container Styling */
 .resume-container {
     font-family: Arial, sans-serif;
-    margin: 90px auto auto auto;
+    margin: 90px auto 40px auto;
     max-width: 800px;
     padding: 50px;
     background: transparent;
@@ -81,7 +81,7 @@ ul li {
 .dark .resume-header p,
 .dark .contact p,
 .dark ul li {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
 }
 
 .dark .contact a {
@@ -106,5 +106,5 @@ ul li {
 }
 
 .light .contact a {
-    color: #f0eeea;
+    color: #ffffff;
 }
