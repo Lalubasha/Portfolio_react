@@ -21,21 +21,22 @@
 
 .projects-box {
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-
+.dark .projects-box {
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.1);
+}
 
 .dark .projects-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0px 15px rgba(172, 167, 167, 0.675);
+    box-shadow: 0 0px 15px rgba(172, 167, 167, 0.826);
 }
 .light .projects-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0px 20px rgb(14, 14, 14);
+    box-shadow: 0 0px 15px 3px rgb(12, 12, 12);
 }
 
 .projects-info i {
@@ -54,24 +55,20 @@
 
 .projects-info p {
     font-size: 1rem;
- 
+   
     transition: color 0.3s ease;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+    margin: 30px auto 10px auto;
 }
 
 .btn-project {
     text-decoration: none;
-
-    color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition:  color 0.3s ease;
 }
 
 
@@ -79,10 +76,7 @@
 /* Dark Mode Styling */
 
 
-.dark .projects-box {
-    
-    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.1);
-}
+
 
 .dark .projects-info i {
     color: #ffa500;
@@ -95,10 +89,12 @@
 
 .dark .btn-project {
     background: #ffa500;
+    color: #fff;
 }
 
 .dark .btn-project:hover {
     background: #e68a00;
+  
 }
 
 /* Light Mode Styling */
@@ -110,7 +106,7 @@
 }
 
 .light .projects-info i {
-    color: #ffa500;
+    color: #f0efed;
 }
 
 .light .projects-info h4,
@@ -119,9 +115,10 @@
 }
 
 .light .btn-project {
-    background: #ffa500;
+    background: #f6f5f4;
+    color: #000;
 }
 
 .light .btn-project:hover {
-    background: #e68a00;
+    background: #f1efeb;
 }
