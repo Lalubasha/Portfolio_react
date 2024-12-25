@@ -8,14 +8,12 @@ function Resume() {
                 <h1>Shaik Lalu Basha</h1>
                 <p> Full Stack Developer  |  Software Developer </p>
                 <div className="contact">
-                  
-                    <p> lallalbasha111@gmail.com</p>
+                    <p>lallalbasha111@gmail.com</p>
                     <p>
                         <a href="https://lalubasha.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a> | 
                         <a href="https://github.com/Lalubasha" target="_blank" rel="noopener noreferrer"> GitHub</a> | 
                         <a href="https://www.linkedin.com/in/lalu-basha-a22b281b7/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
                     </p>
-
                 </div>
             </header>
             
@@ -47,23 +45,27 @@ function Resume() {
             <section>
                 <h2>Projects</h2>
                 <div>
-                    <h3>Library Management System</h3>
-                    <p>Technologies Used: Java, SQL</p>
+                    <h3>Travel Planner Website</h3>
+                    <p>Technologies Used: React JS, Node JS, Express JS, MongoDB, HTML, CSS</p>
                     <ul>
-                        <li>Developed a comprehensive library management system to manage book inventories, user accounts, and transactions.</li>
-                        <li>Designed and implemented a relational database for efficient data storage and retrieval.</li>
-                        <li>Created a user-friendly interface for library staff.</li>
+                        <li>Helps users to plan their travels efficiently by checking various destinations and budgets.</li>
+                        <li>Features include location comparison, expense tracking, and a seamless user experience.</li>
+                        <li>Developed with React JS for front-end and Node.js for back-end.</li>
+                        
                     </ul>
                 </div>
                 <div>
-                    <h3>Expense Tracker Application</h3>
-                    <p>Technologies Used: Python, SQLite</p>
+                    <h3>ATM PIN Matching Website</h3>
+                    <p>Technologies Used: Java, Spring Boot, MySQL, HTML, CSS, JavaScript</p>
                     <ul>
-                        <li>Created an expense tracker application to manage and track personal finances.</li>
-                        <li>Designed a database using SQLite to store expense records.</li>
-                        <li>Implemented features for generating monthly expense reports and visualizing spending patterns.</li>
+                        <li>Simulates an ATM system for secure PIN entry and verification.</li>
+                        <li>Features advanced encryption, user authentication, and transaction history tracking.</li>
+                        <li>Developed with Java Spring Boot and MySQL for secure back-end operations.</li>
+                        
                     </ul>
                 </div>
+                
+                
             </section>
 
             <section>

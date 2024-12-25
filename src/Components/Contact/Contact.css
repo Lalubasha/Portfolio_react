@@ -1,11 +1,15 @@
-/* Contact Wrapper */
+/* General Styling */
 .contact-wrapper {
     font-family: Arial, sans-serif;
     max-width: 1200px;
-    width: 70%;  /* Adjusted max-width to accommodate both form and social links */
-    margin: 100px auto;
-    padding: 50px;
+    width: 80%;
+    margin: 80px auto;
+    padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -13,41 +17,32 @@
 .contact-header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    
+    text-align: center;
     transition: color 0.3s ease;
 }
 
 .contact-header p {
     font-size: 1.2em;
-    margin-bottom: 20px;
- 
+    margin-bottom: 40px;
+    text-align: center;
     transition: color 0.3s ease;
 }
 
-/* Contact Content (flexbox) */
+/* Contact Content */
 .contact-content {
     display: flex;
-    justify-content: space-between; /* Aligns form and social icons */
-    align-items: flex-start;
-    flex-wrap: wrap; /* For responsive behavior */
-    gap: 30px;
-    transition: all 0.3s ease;
-}
-
-/* Divider between form and social links */
-.contact-divider {
-    width: 1px;
-    
-    height: 100%;
-    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 /* Contact Form */
-.contact-form.redesigned {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 60%;  /* Set width for the form */
+    width: 50%;
+    text-align: center;
 }
 
 .form-row {
@@ -61,9 +56,6 @@
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background: var(--input-bg-color, #fff);
-    color: var(--input-text-color, #333);
     transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -72,75 +64,64 @@
     resize: none;
 }
 
-.submit-btn.redesigned {
+.submit-btn {
     padding: 10px 20px;
     font-size: 1.2em;
-    color: #fff;
-    background: var(--primary-color, #007BFF);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
-.submit-btn.redesigned:hover {
-    background: var(--primary-hover-color, #0056b3);
-}
 
-/* Contact Links (Social Icons) */
+
+/* Contact Links */
 .contact-links {
-    width: 30%;  /* Set width for social icons */
+    margin-top: 50px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contact-links ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 40px;
 }
 
 .contact-links li {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-size: 1.2em;
 }
 
 .contact-links a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--link-color, #007BFF);
+  
     transition: color 0.3s ease;
 }
 
-.contact-links a:hover {
-    color: var(--link-hover-color, #0056b3);
-}
 
 /* Dark Mode */
 .dark .contact-wrapper {
-    background: #333;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    
+    
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.584);
 }
 
 .dark .form-input, .dark .form-textarea {
-    background: #444;
-    color: #fff;
-    border: 1px solid #666;
+    border: 1px solid #121010;
 }
 
-.dark .submit-btn.redesigned {
+.dark .submit-btn {
     background: #ffa500;
+    color: #fff;
 }
 
-.dark .submit-btn.redesigned:hover {
+.dark .submit-btn:hover {
     background: #e68a00;
 }
 
@@ -149,5 +130,33 @@
 }
 
 .dark .contact-links a:hover {
-    color: #e68a00;
+    color: #fff;
+}
+
+
+.light .contact-wrapper {
+    box-shadow: 0 2px 10px rgba(11, 11, 11, 0.907);
+}
+
+.light .form-input, .light .form-textarea {
+    border: 1px solid #666;
+}
+
+.light .submit-btn {
+    background: #3cff00;
+    
+    
+}
+
+.light .submit-btn:hover {
+    background: #4abf27;
+    color: #fff;
+}
+
+.light .contact-links a {
+    color: #ff5e00;
+}
+
+.light .contact-links a:hover {
+    color: #fff;
 }

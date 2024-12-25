@@ -29,7 +29,7 @@ function Contact() {
                 <p>Feel free to reach out by filling the form below or through my social links.</p>
             </div>
             <div className="contact-content">
-                <form className="contact-form redesigned" onSubmit={handleSubmit}>
+                <form className="contact-form " onSubmit={handleSubmit}>
                     <div className="form-row">
                         <input
                             type="text"
@@ -60,14 +60,14 @@ function Contact() {
                             className="form-textarea"
                         ></textarea>
                     </div>
-                    <button type="submit" className="submit-btn redesigned">Send Message</button>
+                    <button type="submit" className="submit-btn">Send Message</button>
                 </form>
                 <div className="contact-links">
-                    <h2>Connect with Me</h2>
+                    
                     <ul>
                         <li>
                             <a href="mailto:lallalbasha111@gmail.com">
-                                <span className="icon">📧</span> lallalbasha111@gmail.com
+                                <span className="icon">📧</span> Email Me
                             </a>
                         </li>
                         <li>
@@ -83,11 +83,6 @@ function Contact() {
                         <li>
                             <a href="https://github.com/Lalubasha" target="_blank" rel="noopener noreferrer">
                                 <span className="icon">🐙</span> GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:8142038361">
-                                <span className="icon">📞</span> 8142038361
                             </a>
                         </li>
                     </ul>

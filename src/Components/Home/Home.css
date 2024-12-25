@@ -21,6 +21,49 @@
     width: 100%;
     gap: 1rem;
   }
+  /* CTA Section Styling */
+.cta-section {
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 8px;
+
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+ /* Dark text color */
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.cta-section .btn {
+  display: inline-block;
+  background-color: #ffa500; /* Primary button color */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #ff7f00; /* Darker shade on hover */
+  transform: translateY(-3px); /* Small lift effect on hover */
+}
+
+.cta-section .btn:active {
+  transform: translateY(1px); /* Button presses down slightly on click */
+}
+
 
   .text-content {
     max-width: 70%;
@@ -115,6 +158,7 @@
     margin-bottom: 0.5rem;
     font-style: bold;
   }
+  
 
 /* Light Mode */
 .light .skills-section li,

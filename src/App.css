@@ -12,7 +12,8 @@ body.light {
   
   height: 100vh;
   margin: 0;
-  background: linear-gradient(-45deg, #4682b4, #87cefa, #f5d69a, #d1bd80, #f5bd6f);
+  background: linear-gradient(-45deg, #4682b4, #87cefa, #fbbd61, #e1af80, #f7d4b0);
+
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
 }

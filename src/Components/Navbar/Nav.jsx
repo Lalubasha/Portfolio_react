@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Nav.css";
-import moon from "./moon.jpg";
-import sun from "./sun.jpg";
+
 function Nav({ darkMode, toggleMode }) {
     return (
         <div className={`navbar ${darkMode ? "dark" : "light"}`}>
